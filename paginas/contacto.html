@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Gimnasio BothFit - Contacto</title>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACION -->
+    <header class="navbar navbar-expand-lg navbar-white bg-white  header ">
+        <div class="navbar-brand logo">
+            <p class="iniciales-logo">GB</p>
+            <h1>Gimnasio Bothfit</h1>
+        </div>
+
+        <nav class="nav container px-4 text-center">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+             
+             <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="../index.html">INICIO</a></li>
+                    <li class="nav-item"><a href="../paginas/actividades.html">ACTIVIDADES</a></li>
+                    <li class="nav-item"><a href="../index.html#horarios">HORARIOS</a></li>
+                    <li class="nav-item"><a href="../paginas/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item"><a href="./contacto.html">CONTACTO</a></li>
+
+                </ul>
+
+            </div>
+            
+        </nav>
+    </header>
+
+    <hr>
+    <!-- INICIO DE FORMULARIRO -->
+    <main id="mainContactos">
+        <div class="contenedor-form" data-aos="fade-down">
+            <section id="tituloForm">
+                <h2 class="subTexto">Sumate a BothFit</h2>
+                <p class="textos"> Nos comunicaremos a la brevedad</p>
+            </section>
+            <div class="inicioForm">
+                <form>
+                    <label for="campo-nombre">Nombre y apellido</label>
+                    <input type="text" id="campo-nombre"
+                    placeholder="nombre y apellido" required>
+      
+                    <label for="campo-email">Email</label>
+                    <input type="email" id="campo-email"
+                    placeholder="ejemplo@gmail.com" required>
+      
+                    <label for="campo-telefono">Telefono</label>
+                    <input type="tel" id="campo-telefono">
+      
+                    <label for="actividad-deseada">¿Qué actividad te interesa?:</label>
+                    <select name="" id="actividad-deseada">
+                    <option value="">....</option>
+                    <option value="">Musculacion</option>
+                    <option value="">Natacion</option>
+                    <option value="">Zumba</option>
+                    <option value="">Funcional</option>
+                    </select>
+                    
+                    <div class="caja">
+                        <textarea name=""  id="" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Enviar datos">
+      
+                </form>
+        </div>
+    
+    </main>
+    <hr>
+    <!-- INICIO DEL FOOTER -->
+    <footer>
+        <div class="logo">
+            <p class="iniciales-logo">GB</p>
+           
+        </div>
+
+        <div class="contenedor-f">
+            <div>
+                <h3 class="titulos-footer"><a href="../paginas/ubicacion.html">Ubicacion</a></h3>
+                <i class="bi bi-geo-fill"></i>
+            </div>
+
+            <form id="newsletter">
+                <h4 class="titulos-footer"> Newsletter </h4>
+                <label for=""campo-email">Email</label>
+                <input type="email" id="campo-email"
+                placeholder="ejemplo@gmail.com" required>
+            </form>
+
+            <div class="red-social">
+                <h5 class="titulos-footer"> Redes </h5>
+                <i class="bi-instagram"></i>
+                <i class="bi-youtube"></i>
+             </div>
+
+
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> 
+</body>
+</html>
