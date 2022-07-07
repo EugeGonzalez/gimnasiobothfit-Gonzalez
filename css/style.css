@@ -361,7 +361,7 @@ footer{
 @media(min-width:768px){
     .navbar-toggler{
         padding: 4px 10px;
-        padding-bottom: 50%;
+        
         font-size: 20px;
         line-height: 1;
         background-color: transparent;
@@ -443,18 +443,14 @@ footer{
 @media (max-width:320px){
     /* HORARIOS*/
     .tabla-horarios{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-
+        
         font-size: 0.5rem;
     }
 
     .horarios-clases{
         padding: 0.625rem;
     
-        display: flex;
-        flex-direction: column;
+        
     
        
     }
@@ -547,7 +543,7 @@ footer{
 
     }
     
-    .contenedor-act{
+    .contenedor-prin{
         overflow-x:scroll;
         width: 100%;
 
@@ -965,3 +961,11 @@ footer{
     
 }
 
+@media (min-width:320px){
+    .contenedor-prin{
+        overflow-x:scroll;
+        width: 100%;
+
+       
+    }
+}
