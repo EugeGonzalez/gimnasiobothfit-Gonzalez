@@ -35,11 +35,8 @@ a:active{
 
 .header{
     background-color: #ffffff;
-
     padding: 1.25rem;
-    
-    
-    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+    box-shadow: 0px 0px 70px rgba(131, 130, 130, 0.2);
 }
 
 .header .logo {
@@ -353,23 +350,13 @@ article > img{
 input:focus{
     background-color: #4648493a;
 }
-.contenedor-form{
-    border: 1px solid black;
-    width: 40%;
-    height: 70%;
 
-    display: flex;
-    justify-content: center;
 
-    margin: 0 auto;
-    
-}
+
 
 #tituloForm{
     text-align: center;
-    
     background: linear-gradient(120deg, #d3cfcfea 0%, #888888c0 100%);
-
     padding: 0.625em;
     
 }
@@ -379,16 +366,8 @@ input:focus{
 }
 
 .inicioForm{
-    font-family: 'Poppins', sans-serif;
-   
-    background: linear-gradient(120deg, #dfdada 0%, #e8ebec 100%);
-    text-align: center;
-
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(120deg, #eeebeb7a 0%, #f4f6f7 100%);
+    
 }
 
 
@@ -515,14 +494,19 @@ footer{
 
     .navbar-toggler{
         padding: 4px 10px;
-        padding-bottom: 50%;
+        
         font-size: 20px;
         line-height: 1;
         background-color: transparent;
         border: 1px solid transparent;
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out;
+
+        
+
      }
+
+    
 }
 
 
@@ -776,7 +760,7 @@ footer{
 
     .navbar-toggler{
         padding: 4px 10px;
-        padding-bottom: 50%;
+        
         font-size: 20px;
         line-height: 1;
         background-color: transparent;

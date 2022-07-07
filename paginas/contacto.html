@@ -38,43 +38,51 @@
         </nav>
     </header>
 
-    <hr>
+  
     <!-- INICIO DE FORMULARIRO -->
     <main id="mainContactos">
-        <div class="contenedor-form" data-aos="fade-down">
+        <div class="container px-5 my-5 contenedor-form">
             <section id="tituloForm">
                 <h2 class="subTexto">Sumate a BothFit</h2>
                 <p class="textos"> Nos comunicaremos a la brevedad</p>
             </section>
-            <div class="inicioForm">
-                <form>
-                    <label for="campo-nombre">Nombre y apellido</label>
-                    <input type="text" id="campo-nombre"
-                    placeholder="nombre y apellido" required>
-      
-                    <label for="campo-email">Email</label>
-                    <input type="email" id="campo-email"
-                    placeholder="ejemplo@gmail.com" required>
-      
-                    <label for="campo-telefono">Telefono</label>
-                    <input type="tel" id="campo-telefono">
-      
-                    <label for="actividad-deseada">¿Qué actividad te interesa?:</label>
-                    <select name="" id="actividad-deseada">
-                    <option value="">....</option>
-                    <option value="">Musculacion</option>
-                    <option value="">Natacion</option>
-                    <option value="">Zumba</option>
-                    <option value="">Funcional</option>
+            <form id="contactForm" class="inicioForm">
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nombreYApellido" type="text" placeholder="Nombre y Apellido" data-sb-validations="required" />
+                    <label for="nombreYApellido">Nombre y Apellido</label>
+                    <div class="invalid-feedback" data-sb-feedback="nombreYApellido:required">Nombre y Apellido is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                    <label for="emailAddress">Email Address</label>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="celular" type="text" placeholder="Celular" data-sb-validations="required" />
+                    <label for="celular">Celular</label>
+                    <div class="invalid-feedback" data-sb-feedback="celular:required">Celular is required.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="queActividadTeInteresa" aria-label="¿Qué actividad te interesa?">
+                        <option value="Funcional">Funcional</option>
+                        <option value="Musculacion">Musculacion</option>
+                        <option value="Natacion">Natacion</option>
+                        <option value="Zumba">Zumba</option>
                     </select>
-                    
-                    <div class="caja">
-                        <textarea name=""  id="" cols="30" rows="10"></textarea>
-                    </div>
-                    
-                    <input type="submit" value="Enviar datos">
-      
-                </form>
+                    <label for="queActividadTeInteresa">¿Qué actividad te interesa?</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="comentario" type="text" placeholder="Comentario" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <label for="comentario">Comentario</label>
+                    <div class="invalid-feedback" data-sb-feedback="comentario:required">Comentario is required.</div>
+                </div>
+                
+                <div class="d-grid">
+                    <button class="btn btn-dark btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
         </div>
     
     </main>
