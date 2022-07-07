@@ -60,13 +60,10 @@ a:active{
 	margin-bottom: 15px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1rem;
 
-    
-}
+
+
+
 
 
 
@@ -502,7 +499,7 @@ footer{
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out;
 
-        
+
 
      }
 
@@ -815,15 +812,14 @@ footer{
         font-size: 16px;
         margin-bottom: 15px;
     }
-    
-    .nav ul li{
-        text-align: center;
-        justify-content: space-around;
-        
-        font-size: 1rem;
-        grid-area: nav;
 
+
+    .contenedor-nav{
+        
+        flex-wrap: nowrap;
     }
+    
+    
 
     
 
@@ -914,18 +910,15 @@ footer{
         margin-bottom: 15px;
     }
     
-    nav ul li{
-        text-align: center;
-        justify-content: space-around;
-        
-        font-size: 1rem;
-        grid-area: nav;
+    .contenedor-div{
+       grid-area: nav;
+       
+       display: flex;
+       flex-wrap: nowrap;
 
     }
 
-    .navbar{
-        height: 50%;
-    }
+    
 
 
     .portada-bienvenida{
