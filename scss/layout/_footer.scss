@@ -1,0 +1,27 @@
+footer{
+    width: 100%;
+    
+    font-family: $font-family;
+    font-size: 1rem;
+    
+    grid-area: footer;
+
+    .contenedor-f{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .titulos-footer{
+            font-weight: map-get($estilos, peso);
+            font-size: 0.8em;
+        }
+    
+        
+    }
+}
+
+@each $red, $color in $redes{
+    .bi-#{$red}{
+        color:$color;
+    }
+}

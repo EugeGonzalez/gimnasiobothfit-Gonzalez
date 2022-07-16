@@ -1,0 +1,55 @@
+header{
+    background-color: $color-background-principal;
+    padding: 1.25rem;
+    box-shadow: $box-shadow;
+
+    .logo {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+
+        h1{
+    
+            font-size: 1.875rem;
+
+            
+        }
+    }
+   
+}
+.logo .iniciales-logo {
+    padding: 0.3125rem;
+    border: 2px solid #000;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+nav{
+    
+    text-align: center;
+    
+    
+    ul{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        
+    }
+
+        li{
+            
+        list-style-type: none;
+       
+           
+        }
+}
+
+
+
+
