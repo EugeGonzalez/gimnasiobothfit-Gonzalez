@@ -528,3 +528,12 @@
         transition: box-shadow 0.15s ease-in-out;
     }
 }
+
+@media (min-width:320px){
+    .contenedor-prin{
+        overflow-x:scroll;
+        width: 100%;
+
+       
+    }
+}
