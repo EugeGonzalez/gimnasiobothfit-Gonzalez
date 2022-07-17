@@ -1,0 +1,19 @@
+input:focus{
+    background-color: #4648493a;
+}
+
+#tituloForm{
+    text-align: center;
+    background: linear-gradient(120deg, #d3cfcfea 0%, #888888c0 100%);
+    padding: 0.625em;
+    
+}
+.subTexto{
+    font-family: $font-family;
+    font-size: 2rem;
+}
+
+.inicioForm{
+    background: linear-gradient(120deg, #eeebeb7a 0%, #f4f6f7 100%);
+    
+}

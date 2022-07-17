@@ -1,0 +1,530 @@
+@media (max-width:1024px){
+
+    .header{
+        padding: 1.25rem;
+        box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,12vh);
+        grid-template-areas: 
+        "logo logo"
+        "nav  nav";
+
+        .logo {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+    
+            grid-area: logo;
+
+            h1{
+        
+                font-size: 1.25rem;
+                text-align: center;
+            }
+    
+        
+            
+        }
+
+        
+    }
+    
+     
+    .logo .iniciales-logo {
+        padding: 0.3125rem;
+        border: 2px solid #000;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    
+
+
+    .contenedor-nav{
+        
+        flex-wrap: nowrap;
+    }
+    
+    .contenedor-img img{
+        height:$height;
+        width:$width;
+    }
+
+
+
+
+
+    .actividades {
+        
+       display: flex;
+    
+       justify-content: space-around;
+       align-items: center;
+    
+
+       min-width:230px;
+       margin: 0 10px;
+
+    }
+
+    
+}
+
+
+@media (min-width:1024px) {
+    a:active{
+        color: black;
+    
+    }
+   
+
+    
+
+    
+    .header{
+        padding: 1.25rem;
+        box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,12vh);
+        grid-template-areas: 
+        "logo logo"
+        "nav  nav";
+
+        .logo {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 3px;
+    
+            grid-area: logo;
+
+            h1{
+        
+                font-size: 1.25rem;
+                text-align: center;
+            }
+    
+        
+            
+        }
+
+        .contenedor-div{
+            grid-area: nav;
+            
+            
+     
+            text-align: center;
+     
+            border-top: 1px solid #000;
+             border-bottom: 1px solid #000;
+     
+         }
+
+       
+    }
+    
+    .logo .iniciales-logo {
+        padding: 0.3125rem;
+        border: 2px solid #000;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    
+
+    
+
+    
+
+
+    .portada-bienvenida{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "titulo img";
+        .contenedor-texto{
+            grid-area: titulo;
+        }
+
+        .contenedor-img{
+            grid-area: img;
+         }
+
+    }
+
+   
+
+
+    #actividades-fisicas{
+        display: grid;
+
+        grid-template-columns: 35vh 1fr;
+        grid-template-rows: 40vh;
+        grid-template-areas: 
+        "titulo act";
+
+        h3{
+            transform: rotate(-90deg);
+            grid-area: titulo;
+    
+        }
+    }
+
+   
+
+    .contenedor-act{
+        grid-area: act;
+    }
+
+
+    .horarios-clases{
+        display: grid;
+        grid-template-columns: 35vh 1fr;
+        grid-template-rows: 40vh;
+        grid-template-areas: 
+        "titulo hora";
+
+    }
+
+    .titulo-horarios{
+        transform: rotate(-90deg);
+        grid-area: titulo;
+
+        
+    }
+
+
+    .tabla-horarios{
+        grid-area: hora;
+
+    }
+
+    
+    .actividades {
+        
+        display: flex;
+     
+        justify-content: space-around;
+        align-items: center;
+     
+ 
+        min-width:230px;
+        margin: 0 10px;
+    }    
+}
+
+@media(min-width:768px){
+    .navbar-toggler{
+        padding: 4px 10px;
+        
+        font-size: 20px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+     }
+}
+
+@media (max-width:768px){
+
+    .header {
+        .logo{
+            h1{
+                font-size: 0.9375rem;
+            }
+        }       
+    }
+
+    .mainIndex{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "portada portada"
+    "info info"
+    "footer footer";
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+    }
+
+    .actividades{
+
+        margin: 0 10px;
+        display:flex;
+        min-width:10.3125rem;
+        
+    }
+
+
+    .contenedor-img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto-descripcion{
+        font-size: 1rem;
+        font-weight: 300;
+
+        margin-bottom: 20px;
+        display: flex;
+        text-align: center;
+    }
+
+    .navbar{
+        height: 50%;
+    }
+
+    .navbar-toggler{
+        padding: 4px 10px;
+        
+        font-size: 20px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;;
+    }
+
+}
+
+@media (max-width:320px){
+    
+    .tabla-horarios{
+        font-size: 0.5rem;
+    }
+
+    .horarios-clases{
+        padding: 0.625rem;
+    }
+    
+    .titulo-horarios{
+        font-family: $font-family;
+        font-size: 1.2rem;
+    
+        padding: 0.625rem;
+    }
+    
+    
+
+    
+
+    .portada-bienvenida{
+        border: $border-card;
+        display: grid;
+
+        grid-template-columns: 35rem;
+        grid-template-rows: repeat(2,30vh) ;
+
+        grid-template-areas: 
+        "titulo"
+        "descripcion"
+        "img";
+        .contenedor-texto{
+            padding: 10px;
+            width: 55%;
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+
+    .titulo-bienvenida{
+        grid-area:titulo;
+        font-size: 1.2rem;
+        display:flex;
+        text-align: map-get($estilos,centro);
+    }
+
+    .texto-descripcion{
+        grid-area:descripcion;
+        font-size: 0.7rem;
+
+        margin-bottom: 10px;
+
+        display: flex;
+        text-align: map-get($estilos,centro);
+    }
+
+
+
+    .contenedor-img img{
+        grid-area:img;
+        height: 80%;
+        width: 57%;
+
+        display: flex;
+    }
+    
+    
+    /* ACTIVIDADES */
+    #actividades-fisicas h3{
+        font-size: 1.2rem;
+    }
+
+    .actividades{
+        padding: 15px;
+        border: border-card;
+        border-radius:10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        min-width:200px;
+        margin: 0 10px;
+
+
+    }
+    
+    .contenedor-prin{
+        overflow-x:scroll;
+        width: 100%;
+
+       
+    }
+
+    
+    .header {
+        .logo {
+            margin-bottom: 10px;
+            
+            text-align: center;
+            letter-spacing: 2px;
+            h1{
+        
+                font-size: 0.9375rem;
+            }
+        }
+    }
+    
+    .logo .iniciales-logo {
+        padding: 5px;
+       
+        display: inline-block;
+        font-size: 0.625rem;
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.6rem;
+    }
+
+   
+    footer{
+        width: 100%;
+        
+        font-size: 0.9rem;
+       
+        text-align: map-get($estilos,centro);
+        align-items: map-get($estilos,centro);
+
+        .contenedor-f{
+
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .titulos-footer{
+                font-weight: bold;
+                font-size: 0.8em;
+        
+                text-align: map-get($estilos,centro);
+                align-items: map-get($estilos,centro);
+            }
+    
+            
+        }
+
+    }
+
+    
+    .tituloPrincipal{
+        font-size: 1.5rem;
+    }
+
+    .tituloDiv{
+        font-size: 1rem;
+    }
+
+    .subtituloDiv{
+        font-size: 0.9rem;
+    }
+
+    .textos{
+        font-size: 0.8rem ;
+    }
+
+    .main-actividades img{
+        width: 100%;
+
+    }
+
+    
+
+    .subTexto{
+        font-size: 1.8rem;
+    }
+
+    form{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    /*nosotros*/
+
+    
+
+    .tituloTarjeta{
+        font-size: 1rem;    
+    }
+
+
+    /* ubicacion , quedamos acá*/
+
+    .inicioUbi{
+        img{
+
+        padding: 20px;
+        width: 100%;
+        }
+        .tituloUbi{
+        
+            font-size: 1.5rem;
+            
+        }
+
+    }
+
+    .clickUbi{
+        
+        font-size: 0.8rem;
+        
+    }
+
+    .navbar-toggler{
+        padding: 4px 10px;
+        
+        font-size: 20px;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+}

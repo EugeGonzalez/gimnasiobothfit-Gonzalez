@@ -1,0 +1,36 @@
+.main-actividades > img{
+    object-fit: cover;
+}
+
+.tituloPrincipal{
+    font-family: $font-family;
+    font-size: 2rem;
+
+    padding: 0.625em;
+}
+
+.tituloDiv{
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 1.25rem;
+
+    padding: 0.625em;
+}
+
+.subtituloDiv{
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 1rem;
+
+    padding: 0.625em;
+    .spanNew{
+        font-weight: bold ; 
+        color: $color-principal;
+    }
+}
+
+.textos {
+    font-family: $font-family;
+
+    padding: 0.625em;
+}
