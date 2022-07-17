@@ -26,7 +26,7 @@ a:link{
 .header{
     background-color: #ffffff;
     padding: 1.25rem;
-    box-shadow: 0px 0px 70px rgba(131, 130, 130, 0.2);
+    box-shadow: $box-shadow;
 
     .logo {
         margin-bottom: 20px;
@@ -54,8 +54,8 @@ a:link{
 
 .portada-bienvenida{
     display: flex;
-	background:  linear-gradient(120deg, #dfdada 0%, #e8ebec 100%);;
-    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+	background:  $gradiente;
+    box-shadow: $box-shadow;
 
     margin-left: 10px;
 
@@ -114,17 +114,17 @@ a:link{
 
 .actividades{
     padding: 1.25rem;
-    border: 1px solid black;
+    border: $border-card;
 
-    background-color:ghostwhite;
+    
 
-    box-shadow:0px 0px 70px rgba(102, 102, 102, 0.2); ;
+    box-shadow:$box-shadow;
    
 
     display: flex;
     flex-direction: column;
     justify-content: map-get($estilos,centro);
-    align-items: center;
+    align-items: map-get($estilos,centro);
     
 
     min-width:15.625rem;
