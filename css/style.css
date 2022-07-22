@@ -27,6 +27,7 @@ header .logo h1 {
 
 .contenedor-div {
   justify-content: center;
+  color: #000;
 }
 
 * {
@@ -579,7 +580,6 @@ footer .contenedor-f .titulos-footer {
 }
 @media (min-width: 320px) {
   .contenedor-prin {
-    overflow-x: scroll;
     width: 100%;
   }
 }
