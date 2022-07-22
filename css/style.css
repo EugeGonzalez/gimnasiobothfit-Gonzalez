@@ -103,6 +103,7 @@ a:link {
 }
 .contenedor-texto .saludo {
   text-align: end;
+  color: orange;
 }
 
 #actividades-fisicas h3 {
