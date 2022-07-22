@@ -25,20 +25,8 @@ header .logo h1 {
   margin-bottom: 15px;
 }
 
-nav {
-  text-align: center;
-}
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1rem;
-}
-nav li {
-  list-style-type: none;
-}
-
-.contenedor.div {
-  background-color: orange;
+.contenedor-div {
+  justify-content: center;
 }
 
 * {
@@ -53,6 +41,10 @@ th {
 
 a:visited {
   color: black;
+}
+a:visited:hover {
+  color: orange;
+  background-color: #ffffff;
 }
 
 a:active {
@@ -87,43 +79,30 @@ a:link {
 }
 
 .portada-bienvenida {
-  display: flex;
-  background: linear-gradient(120deg, #dfdada 0%, #e8ebec 100%);
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  margin-left: 10px;
+  justify-content: center;
 }
-.portada-bienvenida .contenedor-texto {
-  padding: 1.25rem;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-}
-.portada-bienvenida .contenedor-img a {
-  display: inline-block;
+.portada-bienvenida img {
   width: 100%;
   height: 100%;
 }
 
-.titulo-bienvenida {
+.contenedor-texto {
+  justify-content: space-around;
+}
+.contenedor-texto .titulo-bienvenida {
   margin-bottom: 10px;
   font-size: 1.5625rem;
   font-weight: 400;
   text-align: center;
 }
-
-.contenedor-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.texto-descripcion {
+.contenedor-texto .texto-descripcion {
   font-size: 1.25rem;
   font-weight: 300;
-  margin-bottom: 20px;
   color: #464849;
+  text-align: center;
+}
+.contenedor-texto .saludo {
+  text-align: end;
 }
 
 #actividades-fisicas h3 {
@@ -311,10 +290,6 @@ footer .contenedor-f .titulos-footer {
   .contenedor-nav {
     flex-wrap: nowrap;
   }
-  .contenedor-img img {
-    height: 100%;
-    width: 100%;
-  }
   .actividades {
     display: flex;
     justify-content: space-around;
@@ -333,7 +308,7 @@ footer .contenedor-f .titulos-footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 12vh);
-    grid-template-areas: "logo logo" "nav  nav";
+    grid-template-areas: "logo logo" "nav nav";
   }
   .header .logo {
     margin-bottom: 20px;
@@ -347,10 +322,11 @@ footer .contenedor-f .titulos-footer {
     text-align: center;
   }
   .header .contenedor-div {
-    grid-area: nav;
-    text-align: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+  }
+  .header .grid {
+    grid-area: nav;
   }
   .logo .iniciales-logo {
     padding: 0.3125rem;
@@ -358,18 +334,6 @@ footer .contenedor-f .titulos-footer {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 15px;
-  }
-  .portada-bienvenida {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "titulo img";
-  }
-  .portada-bienvenida .contenedor-texto {
-    grid-area: titulo;
-  }
-  .portada-bienvenida .contenedor-img {
-    grid-area: img;
   }
   #actividades-fisicas {
     display: grid;

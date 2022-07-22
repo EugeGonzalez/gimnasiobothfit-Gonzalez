@@ -23,10 +23,10 @@
             <h1>Gimnasio Bothfit</h1>
         </div>
 
-        <div class="contenedor-div">
-            <nav class="nav container px-4 ">
+        
+            <nav class="nav container px-4 grid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div class="collapse navbar-collapse contenedor-div" id="navbarResponsive">
                     <ul class="nav justify-content-center nav-pills nav-justified">
                         <li class="nav-item">
                           <a class="nav-link" href="./index.html">INICIO</a>
@@ -35,7 +35,7 @@
                          <a class="nav-link" href="#actividades-fisicas">ACTIVIDADES</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#horarios-clases">HORARIOS</a>
+                          <a class="nav-link" href="#horarios">HORARIOS</a>
                         </li>
                         <li class="nav-item">
                          <a class="nav-link" href="./paginas/nosotros.html">NOSOTROS</a>
@@ -47,26 +47,26 @@
                 </div>
             
             </nav>
-        </div>
+        
     </header>
     
     <main class="container-fluid mainIndex">
     <!-- PORTADA DE BIENVENIDA -->
      
-       <section class="container-fluid row d-flex justify-content-center portada-bienvenida">
-            <div class="col-6  contenedor-texto">
-                <div>
-                    <h2 class="titulo-bienvenida">BIENVENIDOS A GIMNASIO BOTHFIT</h2>
-                </div>
-                <p class="texto-descripcion">Somos Bothfit un gimnasio con todo lo que necesitas. Esta es nuestra web, donde vas  poder encontrar nuestra informacion</p>
-			
-		    </div>
-            <div class="col-6  contenedor-img">
-                <a>
-                <img src="./galeria/imagenBienvenida.webp" alt ="portada de bienvenida" width="100%" height="auto" class="img-fluid"/>
-			    </a >
-		    </div >
-        </section> 
+    <div class="card mb-3 portada-bienvenida" >
+      <div class="row g-0">
+        <div class="col-md-6">
+          <img src="./galeria/imagenBienvenida.webp" class="img-fluid rounded-start" alt="dos personas entrenando">
+        </div>
+        <div class="col-md-6">
+          <div class="card-body contenedor-texto">
+            <h2 class="card-title titulo-bienvenida">BIENVENIDOS A GIMNASIO BOTHFIT</h2>
+            <p class="card-text texto-descripcion">Somos Bothfit un gimnasio con todo lo que necesitas. Esta es nuestra web, donde vas  poder encontrar nuestra informacion.</p>
+            <p class="card-text saludo"><small class="text-muted">Gracias por visitarnos</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
         <!-- SECCION ACTIVIDADES -->
         <section class="section-act" id="actividades-fisicas">

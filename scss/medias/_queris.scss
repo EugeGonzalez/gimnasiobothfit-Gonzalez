@@ -49,10 +49,7 @@
         flex-wrap: nowrap;
     }
     
-    .contenedor-img img{
-        height:$height;
-        width:$width;
-    }
+    
 
 
 
@@ -94,7 +91,7 @@
         grid-template-rows: repeat(2,12vh);
         grid-template-areas: 
         "logo logo"
-        "nav  nav";
+        "nav nav";
 
         .logo {
             margin-bottom: 20px;
@@ -115,14 +112,19 @@
         }
 
         .contenedor-div{
-            grid-area: nav;
-            
-            text-align: map-get($estilos,centro);
-     
             border-top: $border-card;
             border-bottom: $border-card;
+            
+            
      
-         }
+        }
+
+        .grid{
+            grid-area: nav;
+            
+
+        }
+        
 
        
     }
@@ -136,31 +138,6 @@
     }
     
     
-
-    
-
-    
-
-
-    .portada-bienvenida{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "titulo img";
-        .contenedor-texto{
-            grid-area: titulo;
-        }
-
-        .contenedor-img{
-            grid-area: img;
-         }
-
-    }
-
-   
-
-
     #actividades-fisicas{
         display: grid;
 
