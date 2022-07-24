@@ -113,10 +113,10 @@ a:link {
   font-size: 2rem;
 }
 
-.actividades {
+.actividades-1, .actividades-4, .actividades-3, .actividades-2 {
   padding: 1.25rem;
-  border: 1px solid black;
-  box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+  border: 2px solid black;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,15 +124,15 @@ a:link {
   min-width: 15.625rem;
   margin: 0 20px;
 }
-.actividades h4 {
+.actividades-1 h4, .actividades-4 h4, .actividades-3 h4, .actividades-2 h4 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-.actividades img {
+.actividades-1 img, .actividades-4 img, .actividades-3 img, .actividades-2 img {
   width: 100%;
 }
-.actividades:hover {
+.actividades-1:hover, .actividades-4:hover, .actividades-3:hover, .actividades-2:hover {
   transform: scale(1.2);
 }
 
@@ -223,9 +223,40 @@ input:focus {
   padding-left: 0.625em;
   text-align: center;
 }
+.tituloTarjeta .textos {
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.separador {
+  background-color: rgba(180, 180, 180, 0.521);
+  height: 40px;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubicacion .tituloUbi {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: orange;
+}
 
 .inicioUbi {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .inicioUbi .tituloUbi {
   font-family: "Poppins", sans-serif;
@@ -233,23 +264,29 @@ input:focus {
   text-align: center;
 }
 
-.clickUbi {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  text-align: center;
-}
-
 footer {
+  background-color: rgba(180, 180, 180, 0.521);
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
 }
 footer .contenedor-f {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 15vh);
+  grid-template-areas: "ubicacion info redes";
+  flex-direction: column;
   justify-content: space-between;
 }
-footer .contenedor-f .titulos-footer {
+footer .contenedor-f .ubicacion {
+  grid-area: ubicacion;
+}
+footer .contenedor-f .info {
+  grid-area: info;
+}
+footer .contenedor-f .red-social {
+  grid-area: redes;
+}
+footer .titulos-footer {
   font-weight: bold;
   font-size: 0.8em;
 }
@@ -269,7 +306,7 @@ footer .contenedor-f .titulos-footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 12vh);
-    grid-template-areas: "logo logo" "nav  nav";
+    grid-template-areas: "logo logo" "nav nav";
   }
   .header .logo {
     margin-bottom: 20px;
@@ -289,15 +326,36 @@ footer .contenedor-f .titulos-footer {
     font-size: 16px;
     margin-bottom: 15px;
   }
+  .contenedor-div {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .grid {
+    grid-area: nav;
+  }
   .contenedor-nav {
     flex-wrap: nowrap;
   }
-  .actividades {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 230px;
-    margin: 0 10px;
+  .contenedor-act {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "funcional musculacion" "natacion zumba";
+  }
+  .contenedor-act .activadades-1 {
+    grid-area: funcional;
+  }
+  .contenedor-act .actividades-2 {
+    grid-area: musculacion;
+  }
+  .contenedor-act .actividades-3 {
+    grid-area: natacion;
+  }
+  .contenedor-act .actividades-4 {
+    grid-area: zumba;
+  }
+  .contenedor-prin {
+    overflow-x: visible;
   }
 }
 @media (min-width: 1024px) {
@@ -363,12 +421,8 @@ footer .contenedor-f .titulos-footer {
   .tabla-horarios {
     grid-area: hora;
   }
-  .actividades {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 230px;
-    margin: 0 10px;
+  .contenedor-prin {
+    overflow-x: visible;
   }
 }
 @media (min-width: 768px) {
@@ -395,11 +449,6 @@ footer .contenedor-f .titulos-footer {
     display: flex;
     justify-content: space-around;
     font-size: 1rem;
-  }
-  .actividades {
-    margin: 0 10px;
-    display: flex;
-    min-width: 10.3125rem;
   }
   .contenedor-img img {
     width: 100%;
@@ -522,10 +571,8 @@ footer .contenedor-f .titulos-footer {
     align-items: center;
   }
   footer .contenedor-f {
-    grid-template-columns: repeat(3, 1fr);
-    display: grid;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
   }
   footer .contenedor-f .titulos-footer {
     font-weight: bold;

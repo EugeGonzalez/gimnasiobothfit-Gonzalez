@@ -1,4 +1,6 @@
 footer{
+    background-color: $color-footer;
+
     width: 100%;
     
     font-family: $font-family;
@@ -7,16 +9,29 @@ footer{
     
 
     .contenedor-f{
-        display: flex;
-        flex-direction: row;
+       
+        display: grid;
+        grid-template-columns: repeat(3,15vh);
+        grid-template-areas: "ubicacion info redes";
+        flex-direction: column;
         justify-content: space-between;
-
-        .titulos-footer{
-            font-weight: map-get($estilos, peso);
-            font-size: 0.8em;
-        }
-    
         
+        .ubicacion{
+            grid-area:ubicacion;
+        }
+
+        .info{
+            grid-area: info;
+        }
+
+        .red-social{
+            grid-area:redes;
+        }
+
+    }
+    .titulos-footer{
+        font-weight: map-get($estilos, peso);
+        font-size: 0.8em;
     }
 }
 

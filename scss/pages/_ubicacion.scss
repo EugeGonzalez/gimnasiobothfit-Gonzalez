@@ -1,5 +1,7 @@
 .inicioUbi{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .tituloUbi{
         font-family: $font-family;
         font-size: 2rem;
@@ -7,8 +9,3 @@
     }
 }
 
-.clickUbi{
-    font-family: $font-family;
-    font-size: 1rem;
-    text-align: center; 
-}

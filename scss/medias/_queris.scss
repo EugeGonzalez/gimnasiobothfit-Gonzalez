@@ -9,7 +9,7 @@
         grid-template-rows: repeat(2,12vh);
         grid-template-areas: 
         "logo logo"
-        "nav  nav";
+        "nav nav";
 
         .logo {
             margin-bottom: 20px;
@@ -41,7 +41,20 @@
         margin-bottom: 15px;
     }
 
-    
+    .contenedor-div{
+        border-top: $border-card;
+        border-bottom: $border-card;
+        
+        
+ 
+    }
+
+    .grid{
+        grid-area: nav;
+        
+
+    }
+
 
 
     .contenedor-nav{
@@ -55,19 +68,35 @@
 
 
 
-    .actividades {
+    .contenedor-act{
         
-       display: flex;
-    
-       justify-content: space-around;
-       align-items: map-get($estilos,centro);
-    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "funcional musculacion"
+        "natacion zumba" ;
 
-       min-width:230px;
-       margin: 0 10px;
+        .activadades-1{
+            grid-area:funcional;
+        }
 
+        .actividades-2{
+            grid-area:musculacion;
+        }
+
+        .actividades-3{
+            grid-area:natacion;
+        }
+
+        .actividades-4{
+            grid-area:zumba;
+        }
     }
-
+   
+    .contenedor-prin{
+        overflow-x:visible;
+    }
     
 }
 
@@ -182,18 +211,12 @@
 
     }
 
+    .contenedor-prin{
+        overflow-x:visible;
+    }
+
     
-    .actividades {
-        
-        display: flex;
-     
-        justify-content: space-around;
-        align-items: map-get($estilos,centro);
-     
- 
-        min-width:230px;
-        margin: 0 10px;
-    }    
+       
 }
 
 @media(min-width:768px){
@@ -234,13 +257,7 @@
         font-size: 1rem;
     }
 
-    .actividades{
-
-        margin: 0 10px;
-        display:flex;
-        min-width:10.3125rem;
-        
-    }
+   
 
 
     .contenedor-img img{
@@ -422,10 +439,10 @@
 
         .contenedor-f{
 
-            grid-template-columns: repeat(3,1fr);
-            display: grid;
+            display: flex;
             flex-direction: column;
-            justify-content: space-around;
+                
+           
 
             .titulos-footer{
                 font-weight: bold;
@@ -522,4 +539,7 @@
         width: 100%;
     }
 
+     
 }
+
+

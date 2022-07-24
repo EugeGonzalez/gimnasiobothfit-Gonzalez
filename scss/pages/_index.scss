@@ -108,14 +108,10 @@ a:link{
 
 }
 
-.actividades{
+.actividades-1{
     padding: 1.25rem;
-    border: $border-card;
-
-    
-
-    box-shadow:$box-shadow;
-   
+    border: 2px solid black;
+    border-radius:20px;
 
     display: flex;
     flex-direction: column;
@@ -127,7 +123,7 @@ a:link{
     margin: 0 20px;
 
     h4{
-        text-align: map-get($estilos,centro);
+        text-align: map-get($estilos,centro );
         font-family: $font-family;
         font-weight: 400;
     }
@@ -139,6 +135,18 @@ a:link{
     &:hover{
         transform: scale(1.2);
     }
+}
+
+.actividades-2{
+    @extend .actividades-1;
+}
+
+.actividades-3{
+    @extend .actividades-1;
+}
+
+.actividades-4{
+    @extend .actividades-1;
 }
 
 
