@@ -95,9 +95,15 @@
     }
    
     .contenedor-prin{
-        overflow-x:visible;
+        overflow-x:scroll;
+        
+        width: 10px;
+        
     }
+
     
+
+
 }
 
 
@@ -211,9 +217,7 @@
 
     }
 
-    .contenedor-prin{
-        overflow-x:visible;
-    }
+   
 
     
        
@@ -293,6 +297,15 @@
         background-color: white;
         border: $border-card;
         
+    }
+
+    iframe{
+        width:50%;
+        height: 50%;
+    }
+
+    .portada-bienvenida{
+        z-index: 10;
     }
 
 }
@@ -531,6 +544,11 @@
         border-radius: 0.25rem;
         transition: box-shadow 0.15s ease-in-out;
     }
+
+    iframe{
+        width:50%;
+        height: 50%;
+    }
 }
 
 @media (min-width:320px){
@@ -538,6 +556,8 @@
         
         width: 100%;
     }
+
+   
 
      
 }
