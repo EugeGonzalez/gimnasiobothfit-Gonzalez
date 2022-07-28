@@ -1,6 +1,4 @@
-.main-actividades > img{
-    object-fit: cover;
-}
+
 
 .tituloPrincipal{
     font-family: $font-family;
@@ -33,4 +31,33 @@
     font-family: $font-family;
 
     padding: 0.625em;
+}
+
+.linea{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagen1-funcional{
+    width: 80%;
+    height: 80%;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen2-musculacion{
+   @extend .imagen1-funcional;
+
+}
+
+.imagen3-natacion{
+    @extend .imagen1-funcional;
+}
+
+.imagen4-zumba{
+    @extend .imagen1-funcional;
 }

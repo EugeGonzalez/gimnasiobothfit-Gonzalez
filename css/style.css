@@ -6,7 +6,6 @@ header {
   background-color: white;
   padding: 1.25rem;
   box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
-  margin: 0;
 }
 header .logo {
   margin-bottom: 20px;
@@ -164,10 +163,6 @@ a:link {
   text-align: center;
 }
 
-.main-actividades > img {
-  object-fit: cover;
-}
-
 .tituloPrincipal {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
@@ -195,6 +190,20 @@ a:link {
 .textos {
   font-family: "Poppins", sans-serif;
   padding: 0.625em;
+}
+
+.linea {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen1-funcional, .imagen4-zumba, .imagen3-natacion, .imagen2-musculacion {
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 input:focus {
@@ -432,6 +441,40 @@ footer .titulos-footer {
   }
   .tabla-horarios {
     grid-area: hora;
+  }
+  .arreglos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img-funcional texto" "img-musculacion texto1" "img-natacion texto2" "img-zumba texto3";
+  }
+  .imagen1-funcional, .imagen2-musculacion, .imagen3-natacion, .imagen4-zumba {
+    grid-area: img-funcional;
+    object-fit: cover;
+  }
+  .funcional {
+    grid-area: texto;
+  }
+  .imagen2-musculacion {
+    grid-area: img-musculacion;
+    object-fit: cover;
+  }
+  .musculacion {
+    grid-area: texto1;
+  }
+  .imagen3-natacion {
+    grid-area: img-natacion;
+    object-fit: cover;
+  }
+  .natacion {
+    grid-area: texto2;
+  }
+  .imagen4-zumba {
+    grid-area: img-zumba;
+    object-fit: cover;
+  }
+  .zumba {
+    grid-area: texto3;
   }
 }
 @media (min-width: 768px) {
