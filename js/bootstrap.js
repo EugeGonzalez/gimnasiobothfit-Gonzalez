@@ -194,6 +194,8 @@
     return element.hasAttribute('disabled') && element.getAttribute('disabled') !== 'false';
   };
 
+  
+
   const findShadowRoot = element => {
     if (!document.documentElement.attachShadow) {
       return null;
