@@ -115,32 +115,31 @@ a:link {
 
 .actividades-1, .actividades-4, .actividades-3, .actividades-2 {
   padding: 1.25rem;
-  border: 2px solid black;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 15.625rem;
-  margin: 0 20px;
 }
 .actividades-1 h4, .actividades-4 h4, .actividades-3 h4, .actividades-2 h4 {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-}
-.actividades-1 img, .actividades-4 img, .actividades-3 img, .actividades-2 img {
-  width: 100%;
+  font-size: 1rem;
 }
 .actividades-1:hover, .actividades-4:hover, .actividades-3:hover, .actividades-2:hover {
   transform: scale(1.2);
 }
 
 .contenedor-act {
-  padding: 1.25rem;
-  width: 15.625rem;
+  padding: 1rem;
+  width: 50%;
   display: flex;
   align-items: center;
+}
+.contenedor-act img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
 }
 
 .horarios-clases {
@@ -357,27 +356,6 @@ footer .titulos-footer {
   .contenedor-nav {
     flex-wrap: nowrap;
   }
-  .contenedor-act {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "funcional musculacion" "natacion zumba";
-  }
-  .contenedor-act .activadades-1 {
-    grid-area: funcional;
-  }
-  .contenedor-act .actividades-2 {
-    grid-area: musculacion;
-  }
-  .contenedor-act .actividades-3 {
-    grid-area: natacion;
-  }
-  .contenedor-act .actividades-4 {
-    grid-area: zumba;
-  }
-  .contenedor-prin {
-    overflow-x: scroll;
-  }
 }
 @media (min-width: 1024px) {
   a:active {
@@ -419,7 +397,7 @@ footer .titulos-footer {
   #actividades-fisicas {
     display: grid;
     grid-template-columns: 35vh 1fr;
-    grid-template-rows: 40vh;
+    grid-template-rows: 60vh;
     grid-template-areas: "titulo act";
   }
   #actividades-fisicas h3 {
@@ -432,7 +410,7 @@ footer .titulos-footer {
   .horarios-clases {
     display: grid;
     grid-template-columns: 35vh 1fr;
-    grid-template-rows: 40vh;
+    grid-template-rows: 50vh;
     grid-template-areas: "titulo hora";
   }
   .titulo-horarios {
@@ -536,6 +514,73 @@ footer .titulos-footer {
   .portada-bienvenida {
     z-index: 10;
   }
+  #actividades-fisicas {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: repeat(20vh, 1fr);
+    grid-template-areas: "actividades" "contenedor-act";
+  }
+  h3 {
+    grid-area: actividades;
+  }
+  .contenedor-act {
+    grid-area: contenedor-act;
+    display: grid;
+    grid-template-columns: 70vh 70vh;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "funcional musculacion" "natacion zumba";
+  }
+  .actividad-1 {
+    grid-area: funcional;
+  }
+  .actividad-2 {
+    grid-area: musculacion;
+  }
+  .actividad-3 {
+    grid-area: natacion;
+  }
+  .actividad-4 {
+    grid-area: zumba;
+  }
+}
+@media (max-width: 620px) {
+  #actividades-fisicas {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: repeat(20vh, 1fr);
+    grid-template-areas: "actividades" "contenedor-act";
+  }
+  h3 {
+    grid-area: actividades;
+    font-size: 1.2rem;
+  }
+  .contenedor-act {
+    grid-area: contenedor-act;
+    display: grid;
+    grid-template-columns: 30vh 30vh;
+    grid-template-rows: repeat(2, 60vh);
+    grid-template-areas: "funcional musculacion" "natacion zumba";
+  }
+  .actividad-1 {
+    grid-area: funcional;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-2 {
+    grid-area: musculacion;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-3 {
+    grid-area: natacion;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-4 {
+    grid-area: zumba;
+    width: 130%;
+    height: 90%;
+  }
 }
 @media (max-width: 320px) {
   .navbar-collapse {
@@ -587,22 +632,42 @@ footer .titulos-footer {
     display: flex;
   }
   /* ACTIVIDADES */
-  #actividades-fisicas h3 {
+  #actividades-fisicas {
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: repeat(20vh, 1fr);
+    grid-template-areas: "actividades" "contenedor-act";
+  }
+  h3 {
+    grid-area: actividades;
     font-size: 1.2rem;
   }
-  .actividades {
-    padding: 15px;
-    border: border-card;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 200px;
-    margin: 0 10px;
+  .contenedor-act {
+    grid-area: contenedor-act;
+    display: grid;
+    grid-template-columns: 30vh 30vh;
+    grid-template-rows: repeat(2, 60vh);
+    grid-template-areas: "funcional musculacion" "natacion zumba";
   }
-  .contenedor-prin {
-    overflow-x: scroll;
-    width: 100%;
+  .actividad-1 {
+    grid-area: funcional;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-2 {
+    grid-area: musculacion;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-3 {
+    grid-area: natacion;
+    width: 130%;
+    height: 90%;
+  }
+  .actividad-4 {
+    grid-area: zumba;
+    width: 130%;
+    height: 90%;
   }
   .header .logo {
     margin-bottom: 10px;
@@ -686,11 +751,6 @@ footer .titulos-footer {
   iframe {
     width: 50%;
     height: 50%;
-  }
-}
-@media (min-width: 320px) {
-  .contenedor-prin {
-    width: 100%;
   }
 }
 
