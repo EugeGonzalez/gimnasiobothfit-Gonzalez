@@ -328,8 +328,10 @@
 
     .contenedor-act{
         grid-area: contenedor-act;
+        justify-content: space-around;
+
         display: grid;
-        grid-template-columns: 70vh 70vh;
+        
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "funcional musculacion"
@@ -358,7 +360,7 @@
     #actividades-fisicas{
         
         display: grid;
-        grid-template-columns: 100vh;
+        grid-template-columns: 95vh;
         grid-template-rows: repeat(20vh, 1fr);
         grid-template-areas: 
         "actividades"
@@ -372,6 +374,7 @@
 
     .contenedor-act{
         grid-area: contenedor-act;
+        justify-content: space-evenly;
         
         
         display: grid;
@@ -502,6 +505,7 @@
 
     .contenedor-act{
         grid-area: contenedor-act;
+        
         
         display: grid;
         grid-template-columns: 30vh 30vh;
@@ -674,5 +678,11 @@
     }
 }
 
-
+@media(min-width:320px){
+   
+    
+    #actividades-fisicas{
+        overflow-x: scroll;
+    }
+}
 
