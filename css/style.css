@@ -284,6 +284,17 @@ p {
   text-align: center;
 }
 
+.card-saludo {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contenedor-saludo {
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+}
+
 footer {
   background-color: rgba(180, 180, 180, 0.521);
   width: 100%;
