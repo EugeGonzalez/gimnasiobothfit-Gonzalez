@@ -229,6 +229,7 @@
 }
 
 @media(min-width:768px){
+    
     .navbar-toggler{
         padding: 4px 10px;
         
@@ -242,6 +243,29 @@
 }
 
 @media (max-width:768px){
+
+    .header{
+        
+        display: grid;
+        grid-template-columns: 15vh 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav logo"
+        ;
+
+        .logo {
+            grid-area: logo;
+
+                
+            
+        }
+
+        
+    }
+
+    .grid{
+        grid-area: nav;
+    }
 
     .header {
         .logo{
@@ -357,6 +381,7 @@
 }
 
 @media(max-width:620px){
+    
     #actividades-fisicas{
         
         display: grid;
@@ -411,6 +436,26 @@
 }
 
 @media (max-width:320px){
+    .header{
+        
+        display: grid;
+        grid-template-columns: 15vh 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav logo"
+        ;
+
+        .logo {
+            grid-area: logo;
+
+        }
+
+        
+    }
+
+    .grid{
+        grid-area: nav;
+    }
 
     .navbar-collapse{
         background-color: white;
@@ -686,3 +731,27 @@
     }
 }
 
+@media (max-width:1000px){
+    .header{
+        
+        display: grid;
+        grid-template-columns: 15vh 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav logo"
+        ;
+
+        .logo {
+            grid-area: logo;
+
+                
+            
+        }
+
+        
+    }
+
+    .grid{
+        grid-area: nav;
+    }
+}

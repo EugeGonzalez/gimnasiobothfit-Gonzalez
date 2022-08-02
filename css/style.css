@@ -478,6 +478,18 @@ footer .titulos-footer {
   }
 }
 @media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 15vh 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav logo";
+  }
+  .header .logo {
+    grid-area: logo;
+  }
+  .grid {
+    grid-area: nav;
+  }
   .header .logo h1 {
     font-size: 0.9375rem;
   }
@@ -595,6 +607,18 @@ footer .titulos-footer {
   }
 }
 @media (max-width: 320px) {
+  .header {
+    display: grid;
+    grid-template-columns: 15vh 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav logo";
+  }
+  .header .logo {
+    grid-area: logo;
+  }
+  .grid {
+    grid-area: nav;
+  }
   .navbar-collapse {
     background-color: white;
     border: 1px solid black;
@@ -768,6 +792,20 @@ footer .titulos-footer {
 @media (min-width: 320px) {
   #actividades-fisicas {
     overflow-x: scroll;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    display: grid;
+    grid-template-columns: 15vh 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav logo";
+  }
+  .header .logo {
+    grid-area: logo;
+  }
+  .grid {
+    grid-area: nav;
   }
 }
 
