@@ -114,6 +114,11 @@
             
             a {
                 color:#000;
+
+                &:hover{
+                    color: $color-principal;
+        
+                }
             }
 
         }
