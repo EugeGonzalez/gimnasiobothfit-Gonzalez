@@ -106,6 +106,7 @@ a:link{
 
     font-family: $font-family;
     font-size: 2rem;
+    color:#000;
 
 }
 
@@ -118,7 +119,7 @@ a:link{
     
 
     h4{
-        text-align: map-get($estilos,centro );
+        text-align: map-get($estilos,centro);
         font-family: $font-family;
         font-weight: 400;
         font-size: 1rem;

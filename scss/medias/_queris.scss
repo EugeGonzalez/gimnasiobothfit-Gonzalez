@@ -112,6 +112,9 @@
         .grid{
             grid-area: nav;
             
+            a {
+                color:#000;
+            }
 
         }
         
@@ -564,24 +567,24 @@
     .actividad-1{
         grid-area:funcional;
         width: 130%;
-        height: 90%;
+        height: 70%;
     }
     .actividad-2{
         grid-area: musculacion;
         width: 130%;
-        height: 90%;
+        height: 70%;
     }
     
     .actividad-3{
         grid-area: natacion;
         width: 130%;
-        height: 90%;
+        height: 70%;
     }
 
     .actividad-4{
         grid-area: zumba;
         width: 130%;
-        height: 90%;
+        height: 70%;
     }
 
 
