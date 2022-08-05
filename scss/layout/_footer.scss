@@ -11,7 +11,7 @@ footer{
     .contenedor-f{
        
         display: grid;
-        grid-template-columns: repeat(3,15vh);
+        grid-template-columns: repeat(3,20vh);
         grid-template-areas: "ubicacion info redes";
         flex-direction: column;
         justify-content: space-between;
