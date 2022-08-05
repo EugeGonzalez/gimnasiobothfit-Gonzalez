@@ -58,7 +58,32 @@
         flex-wrap: nowrap;
     }
     
+    a:visited{
+        color: black;
+        
     
+        
+        &:hover{
+            color: $color-principal;
+            background-color: #ffffff;
+        }
+    
+    }
+    a:active{
+        color: $color-principal;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    
+    .grid:visited{
+        color: black;
+        &:hover{
+            color: $color-principal;
+            background-color: #ffffff;
+        }
+    
+    }
 }
 
 

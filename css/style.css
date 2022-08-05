@@ -64,6 +64,14 @@ a:link {
   text-decoration: none;
 }
 
+.grid:visited {
+  color: black;
+}
+.grid:visited:hover {
+  color: orange;
+  background-color: #ffffff;
+}
+
 .header {
   background-color: #ffffff;
   padding: 1.25rem;
@@ -375,6 +383,26 @@ footer .titulos-footer {
   }
   .contenedor-nav {
     flex-wrap: nowrap;
+  }
+  a:visited {
+    color: black;
+  }
+  a:visited:hover {
+    color: orange;
+    background-color: #ffffff;
+  }
+  a:active {
+    color: orange;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  .grid:visited {
+    color: black;
+  }
+  .grid:visited:hover {
+    color: orange;
+    background-color: #ffffff;
   }
 }
 @media (min-width: 1024px) {
