@@ -386,6 +386,13 @@ footer .titulos-footer {
   .grid {
     grid-area: nav;
   }
+  .grid:visited {
+    color: black;
+  }
+  .grid:visited:hover {
+    color: orange;
+    background-color: #ffffff;
+  }
   .contenedor-nav {
     flex-wrap: nowrap;
   }
@@ -413,6 +420,13 @@ footer .titulos-footer {
 @media (min-width: 1024px) {
   a:active {
     color: black;
+  }
+  a:visited {
+    color: black;
+  }
+  a:visited:hover {
+    color: orange;
+    background-color: #ffffff;
   }
   .header {
     padding: 1.25rem;

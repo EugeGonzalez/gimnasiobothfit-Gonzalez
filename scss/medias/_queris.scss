@@ -48,7 +48,14 @@
 
     .grid{
         grid-area: nav;
+        &:visited{
+            color: black;
+            &:hover{
+                color: $color-principal;
+                background-color: #ffffff;
+            }
         
+        }
     }
 
 
@@ -92,11 +99,18 @@
         color: black;
     
     }
+    a:visited{
+        color: black;
+        
+    
+        
+        &:hover{
+            color: $color-principal;
+            background-color: #ffffff;
+        }
+    
+    }
    
-
-    
-
-    
     .header{
         padding: 1.25rem;
         box-shadow: $box-shadow;
