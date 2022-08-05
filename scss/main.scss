@@ -1,8 +1,9 @@
 @import"./base/tipografia";
 @import"./base/variables";
-@import"./layout/header.scss";
+
 
 @import"./pages/index";
+@import"./layout/header";
 @import "./pages/actividades";
 @import"./pages/contacto";
 @import"./pages/nosotros";
